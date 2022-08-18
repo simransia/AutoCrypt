@@ -1,0 +1,41 @@
+.hero-section{
+    background-color:#313a5a;
+    height:100vh;
+    color:white;
+
+    .container{
+         position:relative;
+         height:100%;
+         padding-top:90px;
+         vertical-align: middle;
+    }
+    &__content{
+        width:553px;
+        display:inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+       
+        &__heading{
+            font-size: 48px;
+            margin:0 0 25px 0;
+        }
+        &__para{
+            font-size:16px;
+            margin:0 0 50px 0;
+            line-height: 2;
+        }
+    }
+    &__image{
+        display:inline-block;
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+}
+
+.container{
+    max-width:1240px;
+    margin:0 auto;
+    padding:0 20px;
+}
