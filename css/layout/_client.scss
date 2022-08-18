@@ -1,0 +1,13 @@
+.client-section{
+   padding-top:200px;
+   text-align:center;
+
+   &__image{
+      vertical-align:middle;
+      margin-right:55px;
+   }
+   &__image:last-child{
+    margin-right:0;
+ }
+ 
+}

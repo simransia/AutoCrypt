@@ -246,6 +246,7 @@ ul li {
 
 .testimonials-section {
   padding-top: 250px;
+  height: calc(100vh + 250px);
 }
 .testimonials-section__part-one {
   display: inline-block;
@@ -267,13 +268,14 @@ ul li {
   height: 100vh;
   position: absolute;
   right: 0;
+  overflow-x: hidden;
 }
 .testimonials-section__part-two__list {
-  height: 400px;
+  height: 430px;
   width: 2000px;
-  transform: translateX(-5%);
   position: absolute;
-  bottom: 10%;
+  bottom: 16%;
+  border-radius: 6px;
 }
 .testimonials-section__part-two__list__item {
   width: 350px;
@@ -282,16 +284,75 @@ ul li {
   background-color: white;
   display: inline-block;
   vertical-align: top;
-  padding: 80px 50px 63px;
+  padding: 70px 45px 60px;
 }
 .testimonials-section__part-two__list__item__para {
   color: #5b6c94;
   font-size: 16px;
   line-height: 2;
 }
+.testimonials-section__part-two__list__item__para:nth-child(2) {
+  margin-bottom: 40px;
+}
 .testimonials-section__part-two__list .active-testimonial {
   background-color: #1fdb84;
+}
+.testimonials-section__part-two__list .active-testimonial p {
   color: white;
+}
+.testimonials-section__part-two__btns {
+  position: absolute;
+  bottom: 8%;
+  left: 40px;
+}
+.testimonials-section__part-two__btns input {
+  display: none;
+}
+.testimonials-section__part-two__btns label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-right: 15px;
+}
+.testimonials-section__part-two__btns label:last-child {
+  margin-right: 0;
+}
+.testimonials-section__part-two__btns label:hover {
+  background-color: white;
+}
+
+.client-section {
+  padding-top: 200px;
+  text-align: center;
+}
+.client-section__image {
+  vertical-align: middle;
+  margin-right: 55px;
+}
+.client-section__image:last-child {
+  margin-right: 0;
+}
+
+.footer-section {
+  padding: 180px 0 100px 0;
+  text-align: center;
+  color: #5b6c94;
+}
+.footer-section__para:first-child {
+  margin-bottom: 50px;
+}
+.footer-section a {
+  color: #5b6c94;
+  margin: 0 15px 0 15px;
+}
+.footer-section a:first-child {
+  margin-left: 0;
+}
+.footer-section a:last-child {
+  margin-right: 0;
 }
 
 .button {

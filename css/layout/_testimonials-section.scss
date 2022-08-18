@@ -1,5 +1,7 @@
 .testimonials-section {
   padding-top: 250px;
+  height:calc(100vh + 250px);
+
 
   &__part-one {
     display: inline-block;
@@ -24,15 +26,14 @@
     height: 100vh;
     position: absolute;
     right: 0;
-
+    overflow-x:hidden;
 
     &__list {
-      height: 400px;
+      height: 430px;
       width: 2000px;
-      transform: translateX(-5%);
       position: absolute;
-      bottom: 10%;
-
+      bottom:16%;
+      border-radius: 6px;
 
       &__item {
         width: 350px;
@@ -41,21 +42,48 @@
         background-color: white;
         display: inline-block;
         vertical-align: top;
-        padding:80px 50px 63px;
+        padding:70px 45px 60px;
 
         &__para{
           color:$para-color;
           font-size:$text-sm;
           line-height: 2;
         }
+        &__para:nth-child(2){
+          margin-bottom:40px;
+        }
       }
       
-
       .active-testimonial{
         background-color: #1fdb84;
-        color: white;
-       
-       
+        
+        p{
+          color:white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+      }
+      }
+    }
+    &__btns{
+      position: absolute;
+      bottom:8%;
+      left:40px;
+
+      input{
+        display:none;
+      }
+      label{
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        border:3px solid white;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        margin-right:15px;
+     }
+      label:last-child{
+        margin-right:0;
+      }
+      label:hover{
+        background-color:white;
       }
     }
   }

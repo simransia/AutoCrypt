@@ -1,0 +1,22 @@
+.footer-section {
+    padding: 180px 0 100px 0;
+    text-align: center;
+    color: $para-color;
+
+    &__para:first-child {
+        margin-bottom: 50px;
+    }
+
+    a{
+       color: $para-color;
+       margin: 0 15px 0 15px;
+    }
+
+    a:first-child {
+        margin-left: 0;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+}
