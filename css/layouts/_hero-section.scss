@@ -7,7 +7,7 @@
          position:relative;
          height:100%;
          padding-top:90px;
-         vertical-align: middle;
+         vertical-align:middle;
     }
     &__content{
         width:553px;
@@ -27,6 +27,7 @@
         }
     }
     &__image{
+        font-size:0;
         display:inline-block;
         position:absolute;
         bottom:0;

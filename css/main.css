@@ -112,6 +112,7 @@ ul li {
   line-height: 2;
 }
 .hero-section__image {
+  font-size: 0;
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -390,4 +391,51 @@ ul li {
   height: 60px;
   font-size: 18px;
   padding: 20px 46px;
+}
+
+@media (max-width: 1199px) {
+  .pricing-section__list {
+    padding: 0 10px;
+  }
+  .pricing-section__list__item {
+    width: 290px;
+  }
+  .pricing-section .button {
+    padding: 10px 40px;
+    position: absolute;
+    bottom: 55px;
+    left: 36px;
+  }
+}
+@media (max-width: 960px) {
+  .hero-section {
+    height: 200vh;
+  }
+  .hero-section .container {
+    height: 200vh;
+  }
+  .hero-section__content {
+    width: 100%;
+    text-align: center;
+    top: 45vh;
+    transform: translateY(-50%);
+  }
+  .hero-section__image {
+    display: block;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .pricing-section__list {
+    padding: 0 20px;
+  }
+  .pricing-section__list__item {
+    width: 100%;
+  }
+  .pricing-section .button {
+    padding: 20px 45px;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=main.css.map */

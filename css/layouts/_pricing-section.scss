@@ -15,14 +15,14 @@
          margin-bottom:64px;
 
         &__item{
-        display:inline-block;
-        padding: 20px 30px;
-        border-radius: 5px;
-        border: solid 1px #aefdd9;
-        background-color:#f1fff8;
-        letter-spacing: 2px;
-        font-size:$text-sm;
-        color:$theme-color;
+          display:inline-block;
+          padding: 20px 30px;
+          border-radius: 5px;
+          border: solid 1px #aefdd9;
+          background-color:#f1fff8;
+          letter-spacing: 2px;
+          font-size:$text-sm;
+          color:$theme-color;
         }
     }
    &__list{
