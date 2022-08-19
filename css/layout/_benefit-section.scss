@@ -1,6 +1,7 @@
 .benefit-section{
      
     &__list{
+        width:100%;
       box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
       background-color:white;
       padding: 60px 75px;      
@@ -44,6 +45,10 @@
 
     &__item:last-child{
         margin-right:0px;
+
+        .benefit-section__list__item__image{
+            padding:23px 0;
+        }
     }
 }
 }

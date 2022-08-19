@@ -32,7 +32,7 @@
       height: 430px;
       width: 2000px;
       position: absolute;
-      bottom:16%;
+      bottom:15%;
       border-radius: 6px;
 
       &__item {
@@ -42,15 +42,24 @@
         background-color: white;
         display: inline-block;
         vertical-align: top;
-        padding:70px 45px 60px;
+        padding:65px 45px 55px;
 
         &__para{
           color:$para-color;
           font-size:$text-sm;
           line-height: 2;
+
+          span{
+            font-weight:600;
+            color:$heading-color;
+          }
         }
         &__para:nth-child(2){
-          margin-bottom:40px;
+          margin-bottom:35px;
+        }
+
+        img{
+          margin-bottom:20px;
         }
       }
       
@@ -58,13 +67,17 @@
         background-color: #1fdb84;
         
         p{
-          color:white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+          color:white; 
+          
+          span{
+            color:white; 
+          }
       }
       }
     }
     &__btns{
       position: absolute;
-      bottom:8%;
+      bottom:6%;
       left:40px;
 
       input{

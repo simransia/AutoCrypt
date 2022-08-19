@@ -125,6 +125,7 @@ ul li {
 }
 
 .benefit-section__list {
+  width: 100%;
   box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
   background-color: white;
   padding: 60px 75px;
@@ -165,6 +166,9 @@ ul li {
 }
 .benefit-section__list__item:last-child {
   margin-right: 0px;
+}
+.benefit-section__list__item:last-child .benefit-section__list__item__image {
+  padding: 23px 0;
 }
 
 .pricing-section {
@@ -274,7 +278,7 @@ ul li {
   height: 430px;
   width: 2000px;
   position: absolute;
-  bottom: 16%;
+  bottom: 15%;
   border-radius: 6px;
 }
 .testimonials-section__part-two__list__item {
@@ -284,15 +288,22 @@ ul li {
   background-color: white;
   display: inline-block;
   vertical-align: top;
-  padding: 70px 45px 60px;
+  padding: 65px 45px 55px;
 }
 .testimonials-section__part-two__list__item__para {
   color: #5b6c94;
   font-size: 16px;
   line-height: 2;
 }
+.testimonials-section__part-two__list__item__para span {
+  font-weight: 600;
+  color: #031d5b;
+}
 .testimonials-section__part-two__list__item__para:nth-child(2) {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+.testimonials-section__part-two__list__item img {
+  margin-bottom: 20px;
 }
 .testimonials-section__part-two__list .active-testimonial {
   background-color: #1fdb84;
@@ -300,9 +311,12 @@ ul li {
 .testimonials-section__part-two__list .active-testimonial p {
   color: white;
 }
+.testimonials-section__part-two__list .active-testimonial p span {
+  color: white;
+}
 .testimonials-section__part-two__btns {
   position: absolute;
-  bottom: 8%;
+  bottom: 6%;
   left: 40px;
 }
 .testimonials-section__part-two__btns input {
