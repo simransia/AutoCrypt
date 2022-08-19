@@ -19,11 +19,31 @@
 }
 
 @include lg {
+    .header {
+
+        &__nav {
+            margin-top:135px;
+            display:block;
+            width:100%;
+            background-color: #313a5a;
+            padding:20px 0 30px 20px;
+       
+        }
+
+        &__nav__list__item {
+            display:block;
+            margin-bottom:20px;
+        }
+
+        &__button{
+           float: none;
+        }
+    }
     .hero-section {
         height: 200vh;
 
         .container {
-            height:200vh;
+            height: 200vh;
         }
 
         &__content {
@@ -35,9 +55,32 @@
 
         &__image {
             display: block;
-            right:50%;
-            transform:translateX(50%);
+            right: 50%;
+            transform: translateX(50%);
         }
+    }
+
+    .benefit-section {
+        &__list__item {
+            width:100%;
+            margin-right:0;
+            text-align:center;
+
+            &__para{
+                margin-bottom:80px;
+            }
+
+            &__line{
+                margin:0 auto 25px auto;
+            }
+
+        }
+        &__item:last-child{
+            .benefit-section__list-item__para{
+                margin-bottom:0;
+            }
+        }
+
     }
 
     .pricing-section {
