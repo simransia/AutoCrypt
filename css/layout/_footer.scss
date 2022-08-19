@@ -5,11 +5,13 @@
 
     &__para:first-child {
         margin-bottom: 50px;
+        font-size:$text-sm;
     }
 
     a{
        color: $para-color;
        margin: 0 15px 0 15px;
+       font-size:$text-sm;
     }
 
     a:first-child {

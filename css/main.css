@@ -358,10 +358,12 @@ ul li {
 }
 .footer-section__para:first-child {
   margin-bottom: 50px;
+  font-size: 16px;
 }
 .footer-section a {
   color: #5b6c94;
   margin: 0 15px 0 15px;
+  font-size: 16px;
 }
 .footer-section a:first-child {
   margin-left: 0;
