@@ -29,7 +29,7 @@
     overflow-x:hidden;
 
     &__list {
-      height: 430px;
+      height: 435px;
       width: 2000px;
       position: absolute;
       bottom:15%;
@@ -42,7 +42,7 @@
         background-color: white;
         display: inline-block;
         vertical-align: top;
-        padding:65px 45px 55px;
+        padding:65px 45px 60px;
 
         &__para{
           color:$para-color;

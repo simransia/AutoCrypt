@@ -115,7 +115,7 @@ ul li {
   display: inline-block;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 20px;
 }
 
 .container {
@@ -275,7 +275,7 @@ ul li {
   overflow-x: hidden;
 }
 .testimonials-section__part-two__list {
-  height: 430px;
+  height: 435px;
   width: 2000px;
   position: absolute;
   bottom: 15%;
@@ -288,7 +288,7 @@ ul li {
   background-color: white;
   display: inline-block;
   vertical-align: top;
-  padding: 65px 45px 55px;
+  padding: 65px 45px 60px;
 }
 .testimonials-section__part-two__list__item__para {
   color: #5b6c94;
