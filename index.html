@@ -20,11 +20,18 @@
           <li class="header__nav__list__item"><a href="javascript:void(0)">Testimonials</a></li>
           <li class="header__nav__list__item"><a href="javascript:void(0)">Client</a></li>
         </ul>
+        <ul class="responsive-list">
+          <a href="javascript:void(0)" class="header__button__item ">Login</a>
+          <a href="javascript:void(0)" class="header__button__item  button">Register</a>
+        </ul>
       </nav>
       <span class="header__button">
         <a href="javascript:void(0)" class="header__button__item ">Login</a>
         <a href="javascript:void(0)" class="header__button__item  button">Register</a>
       </span>
+      <a href="javascript:void(0)" class="hamburger" onclick="clickFunction()"><img src="images/bars-solid.png"
+          alt="hamburger" width="35" id="hamburger-icon"></a>
+
     </div>
   </header>
   <section class="hero-section">
@@ -114,65 +121,63 @@
     </section>
 
     <section class="testimonials-section">
-      <div class="container">
         <div class="testimonials-section__part-one">
           <img src="images/group-1.png" alt="icon" width="378px" height="413px">
           <h3 class="testimonials-section__part-one__heading">What
             Customers Say</h3>
         </div>
         <div class="testimonials-section__part-two">
-          <ul class="testimonials-section__part-two__list">
-            <li class="testimonials-section__part-two__list__item active-testimonial">
-              <img src="images/group-2.png" alt="icon">
-              <p class="testimonials-section__part-two__list__item__para">"I started driving with Uber because I liked
-                the idea that my own car could make me money. After just
-                about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-              <p class="testimonials-section__part-two__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
-            </li>
-
-            <li class="testimonials-section__part-two__list__item">
-              <img src="images/group-3.png" alt="icon">
-              <p class="testimonials-section__part-two__list__item__para">"I wanted something where I could meet new
-                people and get out of the house. Uber has helped with both of
-                those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
-              <p class="testimonials-section__part-two__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
-            </li>
-            <li class="testimonials-section__part-two__list__item">
-              <img src="images/group-2.png" alt="icon">
-              <p class="testimonials-section__part-two__list__item__para">"I started driving with Uber because I liked
-                the idea that my own car could make me money. After just
-                about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-              <p class="testimonials-section__part-two__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
-
-            </li>
-            <li class="testimonials-section__part-two__list__item">
-              <img src="images/group-3.png" alt="icon">
-              <p class="testimonials-section__part-two__list__item__para">"I wanted something where I could meet new
-                people and get out of the house. Uber has helped with both of
-                those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
-              <p class="testimonials-section__part-two__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
-
-            </li>
-            <li class="testimonials-section__part-two__list__item">
-              <img src="images/group-2.png" alt="icon">
-              <p class="testimonials-section__part-two__list__item__para">"I started driving with Uber because I liked
-                the idea that my own car could make me money. After just
-                about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-              <p class="testimonials-section__part-two__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
-            </li>
-          </ul>
           <div class="testimonials-section__part-two__btns">
-            <input type="radio" id="img-1" checked>
-            <input type="radio" id="img-2">
-            <input type="radio" id="img-3">
-            <input type="radio" id="img-4">
-            <input type="radio" id="img-5">
-            <label for="img-1"></label>
-            <label for="img-2"></label>
-            <label for="img-3"></label>
-            <label for="img-4"></label>
-            <label for="img-5"></label>
-      </div>
+            <label for="list1"></label>
+            <label for="list2"></label>
+            <label for="list3"></label>
+            <label for="list4"></label>
+            <label for="list5"></label>
+          </div>
+        </div>
+        <div class="testimonials-section__part-three">
+        <input type="radio" name="radio" id="list1" checked>
+        <input type="radio" name="radio" id="list2">
+        <input type="radio" name="radio" id="list3">
+        <input type="radio" name="radio" id="list4">
+        <input type="radio" name="radio" id="list5">
+        <ul class="testimonials-section__list">
+          <li class="testimonials-section__list__item active-testimonial" id="li-1">
+            <img src="images/group-2.png" alt="icon">
+            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+          </li>
+          <li class="testimonials-section__list__item" id="li-2">
+            <img src="images/group-3.png" alt="icon">
+            <p class="testimonials-section__list__item__para">"I wanted something where I could meet new
+              people and get out of the house. Uber has helped with both of
+              those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
+            <p class="testimonials-section__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
+          </li>
+          <li class="testimonials-section__list__item" id="li-3">
+            <img src="images/group-2.png" alt="icon">
+            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+          </li>
+          <li class="testimonials-section__list__item " id="li-4">
+            <img src="images/group-3.png" alt="icon">
+            <p class="testimonials-section__list__item__para">"I wanted something where I could meet new
+              people and get out of the house. Uber has helped with both of
+              those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
+            <p class="testimonials-section__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
+          </li>
+          <li class="testimonials-section__list__item" id="li-5">
+            <img src="images/group-2.png" alt="icon">
+            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="client-section">
@@ -188,7 +193,8 @@
   </main>
   <footer class="footer-section">
     <p class="footer-section__para">© 2018 autocryp All Right Reserved</p>
-    <p class="footer-section__para"><a href="javasccript:void(0)">Benefit</a> / <a href="javasccript:void(0)">Pricing</a> / <a href="javasccript:void(0)">Testimonials </a> / <a
+    <p class="footer-section__para"><a href="javasccript:void(0)">Benefit</a> / <a
+        href="javasccript:void(0)">Pricing</a> / <a href="javasccript:void(0)">Testimonials </a> / <a
         href="javasccript:void(0)">Clients</a></p>
   </footer>
 

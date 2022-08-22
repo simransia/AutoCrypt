@@ -5,6 +5,7 @@ const plans = document.querySelectorAll(".pricing-section__btn__item");
 let priceOne= document.getElementById("basic-price");
 let priceTwo= document.getElementById("professional-price");
 let priceThree= document.getElementById("business-price");
+let headerIcon = document.querySelector("#hamburger-icon")
 
 
 window.onscroll = function () {
@@ -43,7 +44,11 @@ for (let a of plans) {
       a.classList.remove('active-plan-duration');
     } 
     this.classList.add('active-plan-duration');
-  
+   
+    for (let li of priceList) {
+      li.classList.toggle("do-flip");
+    } 
+
     if(this.innerHTML=="MONTHLY"){
         priceOne.innerHTML = "$10";
         priceTwo.innerHTML = "$29";
@@ -56,3 +61,14 @@ for (let a of plans) {
   });
   
 } 
+
+function clickFunction() {
+  var x =  document.querySelector(".header__nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    headerIcon.setAttribute("src", "images/bars-solid.png");
+  } else {
+    x.style.display = "block";
+    headerIcon.setAttribute("src", "images/cross.png");
+  }
+}
