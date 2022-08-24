@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>autocrypt</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <header class="header fixed">
+  <header class="header">
     <div class="container">
       <a class="header__logo">autocrypt</a>
       <nav class="header__nav">
@@ -44,14 +46,14 @@
         <a href="javascript:void(0)" class="button big-button">Get Started</a>
       </div>
       <div class="hero-section__image">
-        <img src="images/artboard.png" alt="demo-image" width="390" height="580">
+        <img src="images/artboard.png" alt="demo-image">
       </div>
     </div>
   </section>
   <main>
     <section class="benefit-section">
-      <div class="container-lg">
-        <ul class="benefit-section__list">
+      <div class="container">
+        <ul class="benefit-section__list" id="benefit">
           <li class="benefit-section__list__item">
             <span class="benefit-section__list__item__image"><img src="images/secure.png" alt="secure"
                 width="40"></span>
@@ -120,64 +122,122 @@
       </div>
     </section>
 
-    <section class="testimonials-section">
-        <div class="testimonials-section__part-one">
-          <img src="images/group-1.png" alt="icon" width="378px" height="413px">
-          <h3 class="testimonials-section__part-one__heading">What
-            Customers Say</h3>
-        </div>
-        <div class="testimonials-section__part-two">
-          <div class="testimonials-section__part-two__btns">
-            <label for="list1"></label>
-            <label for="list2"></label>
-            <label for="list3"></label>
-            <label for="list4"></label>
-            <label for="list5"></label>
-          </div>
-        </div>
-        <div class="testimonials-section__part-three">
-        <input type="radio" name="radio" id="list1" checked>
-        <input type="radio" name="radio" id="list2">
-        <input type="radio" name="radio" id="list3">
-        <input type="radio" name="radio" id="list4">
-        <input type="radio" name="radio" id="list5">
-        <ul class="testimonials-section__list">
-          <li class="testimonials-section__list__item active-testimonial" id="li-1">
+    <section class="testimonial testimonial-one">
+      <div class="part-one">
+        <img src="images/group-1.png" alt="icon" width="378px" height="413px">
+        <h3 class="part-one__heading">What
+          Customers Say</h3>
+      </div>
+      <div class="part-two">
+
+      </div>
+      <input type="radio" name="radio" id="list1" checked>
+      <input type="radio" name="radio" id="list2">
+      <input type="radio" name="radio" id="list3">
+      <input type="radio" name="radio" id="list4">
+      <input type="radio" name="radio" id="list5">
+
+      <div class="part-three">
+        <ul class="part-three__list">
+          <li class="part-three__list__item active-testimonial" id="li-1">
             <img src="images/group-2.png" alt="icon">
-            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+            <p class="part-three__list__item__para">"I started driving with Uber because I liked
               the idea that my own car could make me money. After just
               about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+            <p class="part-three__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
           </li>
-          <li class="testimonials-section__list__item" id="li-2">
+          <li class="part-three__list__item" id="li-2">
             <img src="images/group-3.png" alt="icon">
-            <p class="testimonials-section__list__item__para">"I wanted something where I could meet new
+            <p class="part-three__list__item__para">"I wanted something where I could meet new
               people and get out of the house. Uber has helped with both of
               those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
-            <p class="testimonials-section__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
+            <p class="part-three__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
           </li>
-          <li class="testimonials-section__list__item" id="li-3">
+          <li class="part-three__list__item" id="li-3">
             <img src="images/group-2.png" alt="icon">
-            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+            <p class="part-three__list__item__para">"I started driving with Uber because I liked
               the idea that my own car could make me money. After just
               about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+            <p class="part-three__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
           </li>
-          <li class="testimonials-section__list__item " id="li-4">
+          <li class="part-three__list__item " id="li-4">
             <img src="images/group-3.png" alt="icon">
-            <p class="testimonials-section__list__item__para">"I wanted something where I could meet new
+            <p class="part-three__list__item__para">"I wanted something where I could meet new
               people and get out of the house. Uber has helped with both of
               those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
-            <p class="testimonials-section__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
+            <p class="part-three__list__item__para"><span>Sean Walker</span> / OWW Studio</p>
           </li>
-          <li class="testimonials-section__list__item" id="li-5">
+          <li class="part-three__list__item" id="li-5">
             <img src="images/group-2.png" alt="icon">
-            <p class="testimonials-section__list__item__para">"I started driving with Uber because I liked
+            <p class="part-three__list__item__para">"I started driving with Uber because I liked
               the idea that my own car could make me money. After just
               about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-            <p class="testimonials-section__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
+            <p class="part-three__list__item__para"><span>Brandon Roger</span> / OWW Studio</p>
           </li>
         </ul>
+      </div>
+      <div class="testimonial-one__btns">
+        <label for="list1" id="l-1"></label>
+        <label for="list2" id="l-2"></label>
+        <label for="list3" id="l-3"></label>
+        <label for="list4" id="l-4"></label>
+        <label for="list5" id="l-5"></label>
+      </div>
+    </section>
+    <section class="testimonial testimonial-two">
+      <div class="part-one">
+        <img src="images/group-1.png" alt="icon" width="378px" height="413px">
+        <h3 class="part-one__heading">What
+          Customers Say</h3>
+      </div>
+      <div class="part-two">
+
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/group-3.png" alt="icon" class="swiper-slide__image">
+            <p class="swiper-slide__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="swiper-slide__para"><span>Brandon Roger</span> / OWW Studio</p>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="images/group-3.png" alt="icon" class="swiper-slide__image">
+            <p class="swiper-slide__para">"I wanted something where I could meet new
+              people and get out of the house. Uber has helped with both of
+              those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
+            <p class="swiper-slide__para"><span>Sean Walker</span> / OWW Studio</p>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="images/group-3.png" alt="icon" class="swiper-slide__image">
+            <p class="swiper-slide__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="swiper-slide__para"><span>Brandon Roger</span> / OWW Studio</p>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="images/group-3.png" alt="icon" class="swiper-slide__image">
+            <p class="swiper-slide__para">"I wanted something where I could meet new
+              people and get out of the house. Uber has helped with both of
+              those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
+            <p class="swiper-slide__para"><span>Sean Walker</span> / OWW Studio</p>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="images/group-3.png" alt="icon" class="swiper-slide__image">
+            <p class="swiper-slide__para">"I started driving with Uber because I liked
+              the idea that my own car could make me money. After just
+              about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+            <p class="swiper-slide__para"><span>Brandon Roger</span> / OWW Studio</p>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+
+        </div>
       </div>
     </section>
     <section class="client-section">
@@ -199,6 +259,7 @@
   </footer>
 
   <script src="script/script.js"></script>
+
 </body>
 
 </html>

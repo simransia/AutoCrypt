@@ -6,15 +6,27 @@ let priceOne= document.getElementById("basic-price");
 let priceTwo= document.getElementById("professional-price");
 let priceThree= document.getElementById("business-price");
 let headerIcon = document.querySelector("#hamburger-icon")
+let benefit = document.getElementById("benefit"); 
 
 
 window.onscroll = function () {
+
     if (this.scrollY > 150) {
         navbar.classList.add("fixed");
-    } else {
+    } else if(this.scrollY < 150) {
         navbar.classList.remove("fixed");
     }
 };
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView:'auto',
+  spaceBetween:40,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 for (let a of headerButtons) {
   

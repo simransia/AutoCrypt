@@ -1,55 +1,67 @@
-.benefit-section{
-     
-    &__list{
-      width:100%;
-      box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
-      background-color:white;
-      padding: 60px 75px;      
-      font-size:0;
-      border-radius:10px;
-      z-index:2;
-      
-     &__item{
-        width:calc((100% / 3) - 60px);
-        display:inline-block;
-        margin-right:90px;
-        vertical-align:top;
-
-        &__image{
-            background-color: #f8f9fc;
-            padding:20px 0;
-            display:inline-block;
-            width: 72px;
-            height: 72px;
-            margin-bottom:25px;
-            text-align:center;
-        }
-
-        &__heading{
-            font-size:18px;
-            margin-bottom:25px;
-            color: $heading-color;
-        }
-        &__line{
-            border:none;
-            width:60px;
-            height:4px;
-            background-color: #1fdb84;
-            margin-bottom:25px;
-        }
-        &__para{
-            font-size:16px;
-            color:#5b6c94;
-            line-height: 2;
-        }
+.benefit-section {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        height: 80vh;
     }
 
-    &__item:last-child{
-        margin-right:0px;
+    &__list {
+        width: 100%;
+        box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+        background-color: white;
+        padding: 60px 75px;
+        font-size: 0;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        z-index: 5;
 
-        .benefit-section__list__item__image{
-            padding:23px 0;
+        &__item {
+            width: calc((100% / 3) - 60px);
+            display: inline-block;
+            margin-right: 90px;
+            vertical-align: top;
+
+            &__image {
+                background-color: #f8f9fc;
+                padding: 20px 0;
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            &__heading {
+                font-size: 18px;
+                margin-bottom: 25px;
+                color: $heading-color;
+            }
+
+            &__line {
+                border: none;
+                width: 60px;
+                height: 4px;
+                background-color: #1fdb84;
+                margin-bottom: 25px;
+            }
+
+            &__para {
+                font-size: 16px;
+                color: #5b6c94;
+                line-height: 2;
+            }
+        }
+
+        &__item:last-child {
+            margin-right: 0px;
+
+            .benefit-section__list__item__image {
+                padding: 23px 0;
+            }
         }
     }
-}
 }

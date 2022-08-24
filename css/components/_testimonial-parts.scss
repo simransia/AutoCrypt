@@ -1,0 +1,31 @@
+.testimonial {
+  padding-top: 250px;
+  height: calc(100vh + 250px);
+  position: relative;
+}
+
+.part-one {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+
+  &__heading {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: $text-lg;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $heading-color;
+  }
+
+}
+
+.part-two {
+  width: 810px;
+  height: 100vh;
+  display: inline-block;
+  background-color: #313a5a;
+  position: absolute;
+  right: 0;
+}

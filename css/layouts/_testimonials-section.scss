@@ -1,114 +1,89 @@
-.testimonials-section {
-  padding-top: 250px;
-  height: calc(100vh + 250px);
-  position: relative;
-  overflow-x: hidden;
-  scroll-behavior:smooth;
+.testimonial-one {
+  &__btns {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
 
-  &__part-one {
-    display: inline-block;
-    position: relative;
-    padding-left: 20px;
 
-    &__heading {
-      position: absolute;
-      top: 30px;
-      left: 40px;
-      font-size: $text-lg;
-      font-weight: 600;
-      line-height: 1.2;
-      color: $heading-color;
+    label {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid white;
+      cursor: pointer;
+      transition: all 0.4s;
+      margin-right: 15px;
+      display: inline-block;
     }
 
-  }
+    label:last-child {
+      margin-right: 0;
+    }
 
-  &__part-two {
-    width: 810px;
-    height: 100vh;
-    display: inline-block;
-    background-color: #313a5a;
-    position: absolute;
-    right: 0;
-
-    &__btns {
-      position: absolute;
-      bottom: 6%;
-      left: 40px;
-
-      label {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 3px solid white;
-        cursor: pointer;
-        transition: 0.4s;
-        margin-right: 15px;
-        display: inline-block;
-      }
-
-      label:last-child {
-        margin-right: 0;
-      }
-
-      label:hover {
-        background-color: white;
-      }
+    label:hover {
+      background-color: white;
     }
   }
 
-  &__part-three{
-    width:100%;
-    position: absolute;
-    bottom: 10%;
-    border-radius: 6px;
-    overflow-x:auto;
-  }
-  &__part-three::-webkit-scrollbar {
-    display: none;
-}
 
   input {
     display: none;
   }
 
-  &__list {
-    height: 435px;
-    width:1950px;
-    font-size: 0;
-    cursor:pointer;
-    transform: translateX(20%);
 
-    &__item {
-      width: 350px;
-      height: 100%;
-      margin-right: 40px;
-      background-color: white;
-      display: inline-block;
-      vertical-align: top;
-      padding: 65px 45px 60px;
+  .part-three {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    border-radius: 6px;
+    overflow-x: auto;
 
-      &__para {
-        color: $para-color;
-        font-size: $text-sm;
-        line-height: 2;
+    &__list {
+      height: 435px;
+      width: 1950px;
+      font-size: 0;
+      cursor: pointer;
+      transform: translateX(20%);
+      transition: all 0.5s;
 
-        span {
-          font-weight: 600;
-          color: $heading-color;
+      &__item {
+        width: 350px;
+        height: 100%;
+        margin-right: 40px;
+        background-color: white;
+        display: inline-block;
+        vertical-align: top;
+        padding: 65px 45px 60px;
+
+        &__para {
+          color: $para-color;
+          font-size: $text-sm;
+          line-height: 2;
+
+          span {
+            font-weight: 600;
+            color: $heading-color;
+          }
+        }
+
+        &__para:nth-child(2) {
+          margin-bottom: 35px;
+        }
+
+        img {
+          margin-bottom: 20px;
         }
       }
-
-      &__para:nth-child(2) {
-        margin-bottom: 35px;
-      }
-
-      img {
-        margin-bottom: 20px;
-      }
     }
+
   }
 
-  #list1:checked ~ ul {
+  .part-three::-webkit-scrollbar {
+    display: none;
+  }
+
+  #list1:checked~.part-three ul {
     margin-left: 0;
 
     #li-1 {
@@ -124,7 +99,13 @@
     }
   }
 
-  #list2:checked ~ ul {
+  #list1:checked~&__btns {
+    #l-1 {
+      background-color: white;
+    }
+  }
+
+  #list2:checked~.part-three ul {
     margin-left: -390px;
 
     #li-2 {
@@ -140,7 +121,13 @@
     }
   }
 
-  #list3:checked ~ ul {
+  #list2:checked~&__btns {
+    #l-2 {
+      background-color: white;
+    }
+  }
+
+  #list3:checked~.part-three ul {
     margin-left: -780px;
 
     #li-3 {
@@ -156,7 +143,13 @@
     }
   }
 
-  #list4:checked ~ ul {
+  #list3:checked~&__btns {
+    #l-3 {
+      background-color: white;
+    }
+  }
+
+  #list4:checked~.part-three ul {
     margin-left: -1170px;
 
     #li-4 {
@@ -172,7 +165,13 @@
     }
   }
 
-  #list5:checked ~ ul {
+  #list4:checked~&__btns {
+    #l-4 {
+      background-color: white;
+    }
+  }
+
+  #list5:checked~.part-three ul {
     margin-left: -1550px;
 
     #li-5 {
@@ -188,5 +187,11 @@
 
     }
 
+  }
+
+  #list5:checked~&__btns {
+    #l-5 {
+      background-color: white;
+    }
   }
 }
