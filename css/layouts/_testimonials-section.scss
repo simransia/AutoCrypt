@@ -4,6 +4,7 @@
     bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
+    overflow-x: hidden;
 
 
     label {
@@ -111,6 +112,10 @@
     #li-2 {
       background-color: #1fdb84;
 
+      img:first-child{
+        display: none;
+      }
+
       p {
         color: white;
 
@@ -132,6 +137,11 @@
 
     #li-3 {
       background-color: #1fdb84;
+
+      
+      img:first-child{
+        display: none;
+      }
 
       p {
         color: white;
@@ -155,6 +165,11 @@
     #li-4 {
       background-color: #1fdb84;
 
+      
+      img:first-child{
+        display: none;
+      }
+
       p {
         color: white;
 
@@ -176,6 +191,11 @@
 
     #li-5 {
       background-color: #1fdb84;
+
+      
+      img:first-child{
+        display: none;
+      }
 
       p {
         color: white;

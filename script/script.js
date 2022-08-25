@@ -6,8 +6,9 @@ let priceOne= document.getElementById("basic-price");
 let priceTwo= document.getElementById("professional-price");
 let priceThree= document.getElementById("business-price");
 let headerIcon = document.querySelector("#hamburger-icon")
-let benefit = document.getElementById("benefit"); 
-
+let testimonial = document.querySelectorAll(".swiper-slide"); 
+let swiperBulletNext = document.querySelector(".swiper-button-next");
+let swiperBulletPrevious = document.querySelector(".swiper-button-prev");
 
 window.onscroll = function () {
 
@@ -27,6 +28,15 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+for (let item of testimonial) {
+  item .children[0].setAttribute("src", "images/group-3.png");
+
+if(item .classList.contains("swiper-slide-active")){
+
+  item .children[0].setAttribute("src", "images/group-2.png");;
+}
+}
 
 for (let a of headerButtons) {
   
